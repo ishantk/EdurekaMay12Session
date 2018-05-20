@@ -65,14 +65,14 @@ public class UserListActivity extends AppCompatActivity implements AdapterView.O
         recyclerAdapter = new UserRecyclerAdapter(this,R.layout.list_item,userList);
 
         // ListView
-        //LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
 
         // GridView
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,GridLayoutManager.DEFAULT_SPAN_COUNT);
 
-        //recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager);
 
-        recyclerView.setLayoutManager(gridLayoutManager);
+        //recyclerView.setLayoutManager(gridLayoutManager);
 
         recyclerView.setAdapter(recyclerAdapter);
 

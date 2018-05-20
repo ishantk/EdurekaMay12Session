@@ -6,7 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -56,6 +58,7 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
         ImageView imageView;
         TextView txtName;
         TextView txtEmail;
+        Spinner spinner;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -63,6 +66,16 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
             imageView = itemView.findViewById(R.id.imageView);
             txtName = itemView.findViewById(R.id.textViewName);
             txtEmail = itemView.findViewById(R.id.textViewEmail);
+            spinner = itemView.findViewById(R.id.spinner2);
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(context,android.R.layout.simple_spinner_dropdown_item);
+            adapter.add("Delhi");
+            adapter.add("Pune");
+            adapter.add("Hyderabad");
+            adapter.add("Bengaluru");
+            adapter.add("Chandigarh");
+
+            spinner.setAdapter(adapter);
 
         }
     }
