@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="All Songs"
+        android:id="@+id/allSongs"/>
+
+    <item android:title="Favourites"
+        android:id="@+id/fav"/>
+
+    <item android:title="Recently Played"
+        android:id="@+id/recently"/>
+
+    <item android:title="Artists"
+        android:id="@+id/art"/>
+
+    <item android:title="Add"
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="ifRoom"/>
+</menu>
