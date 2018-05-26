@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -40,23 +42,26 @@
         </receiver>
 
         <activity android:name=".FragmentDemoActivity" />
-        <activity android:name=".UserListActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".JavaViewsActivity">
-
-        </activity>
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".JavaViewsActivity" />
         <activity
             android:name=".MyDrawerActivity"
             android:label="@string/title_activity_my_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ConfigDemoActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+        <activity
+            android:name=".ConfigDemoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FileIOActivity"></activity>
+        <activity android:name=".SettingsActivity">
 
+        </activity>
+        <activity android:name=".MyMusicActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
