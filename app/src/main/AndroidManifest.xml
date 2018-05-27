@@ -3,6 +3,7 @@
     package="co.edureka.edurekamay12session">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -52,17 +53,20 @@
             android:name=".ConfigDemoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name=".FileIOActivity"></activity>
-        <activity android:name=".SettingsActivity">
-
-        </activity>
-        <activity android:name=".MyMusicActivity">
+        <activity android:name=".FileIOActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MyMusicActivity"></activity>
+        <activity android:name=".BooksActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".BookIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
