@@ -12,9 +12,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_my_maps">Map</string>
 
-    <string name="title">Please Enter Your Details</string>
-    <string name="enter_name">Enter Your Name</string>
-    <string name="enter_email">Enter Your Email</string>
-    <string name="submit">Submit</string>
+    <string name="title">Sil vous plaît entrer vos détails</string>
+    <string name="enter_name">Entrez votre nom</string>
+    <string name="enter_email">Entrer votre Email</string>
+    <string name="submit">Soumettre</string>
 
 </resources>

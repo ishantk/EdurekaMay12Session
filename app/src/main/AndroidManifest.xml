@@ -80,13 +80,7 @@
         <activity
             android:name=".MyMapsActivity"
             android:label="@string/title_activity_my_maps" />
-        <activity android:name=".AddCustomerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".AddCustomerActivity"></activity>
 
         <provider
             android:name=".MyContentProvider"
@@ -94,7 +88,16 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".AllCustomers"></activity>
+        <activity android:name=".AllCustomers" />
+        <activity android:name=".LocalizationActivity">
+
+        </activity>
+        <activity android:name=".MySensorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
